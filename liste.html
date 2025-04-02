@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="src/style.css">
+    <title>Liste de courses</title>
+</head>
+
+<body>
+    <header class="max-w-full flex justify-between p-5">
+        <p>🛒CoursesApp</p>
+        <nav><a class="link-hover link-accent" href="/">Produits disponible</a></nav>
+    </header>
+    <main class="p-5">
+      <h2>Ma liste de course</h2>
+      <section>
+        <table class="table my-5">
+          <thead>
+            <th>Produit</th>
+            <th>Prix Unitaire (€)</th>
+            <th>Quantité</th>
+            <th>Sous-total (€)</th>
+            <th>Actions</th>
+          </thead>
+          <tbody id="liste-course-body">
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="max-w-full flex justify-between">
+        <p id="total-general">💰 Total général : 0€</p>
+        <button id="vider-liste" class="btn btn-error">Vider la liste</button>
+      </section>
+
+    </main>
+    <script type="module" src="/src/liste.js"></script>
+</body>
+
+</html>

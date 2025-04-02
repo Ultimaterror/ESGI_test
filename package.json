@@ -1,0 +1,20 @@
+{
+  "name": "listecourses",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "vite": "^6.2.0"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.0.17",
+    "daisyui": "^5.0.9",
+    "tailwindcss": "^4.0.17"
+  }
+}

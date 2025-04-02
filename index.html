@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="src/style.css">
+  <title>Produits</title>
+</head>
+
+<body>
+  <header class="max-w-full flex justify-between p-5">
+    <p>🛒CoursesApp</p>
+    <nav><a class="link-hover link-accent" href="/liste.html">Liste de courses</a></nav>
+  </header>
+  <main class="p-5">
+    <section class="max-w-full flex justify-between">
+      <div class="flex gap-2">
+        <h1>Produits disponible</h1>
+        <p id="compteur-produits" class="badge badge-primary">0 produit</p>
+      </div>
+      <div class="flex gap-2">
+        <input class="input w-xs" id="recherche" type="text" placeholder="Rechecher un produit...">
+        <select class="select" name="tri" id="tri">
+          <option id="option-default" selected hidden value=""></option>
+          <option value="nom">Nom</option>
+          <option value="prix">Prix</option>
+        </select>
+        <button class="btn btn-outline" id="reset-filtres">Réinitialiser</button>
+      </div>
+    </section>
+    <section class="my-2">
+      <ul id="liste-produits" class="grid gap-4 grid-cols-4"></ul>
+    </section>
+  </main>
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
