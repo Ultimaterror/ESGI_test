@@ -1,0 +1,6 @@
+{
+	"include": ["src", "test", "index.test.js"],
+	"typeAcquisition": {
+		"include": ["jest"]
+	}
+}
